@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>hello world</title>
+    <link rel="stylesheet" type="text/css" href="css/pikaday.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+    
+</head>
+<body>
+  
+  <div class="settings">
+    
+    <div class="form">
+      <label>Oh baby, when were you born?</label>
+      <div class="form-group">
+        <input type="text" class="choose_birthday" id="datepicker"/> 
+      </div>
+      <div class="form-group">
+        I wanna die when I am <input type="text" class="choose_lifetime"/> years old.
+      </div>
+      <div class="form-group">
+        <button class="btn" type="button" id="makeday" onclick="_.makeDay()">That's it</button>
+      </div>
+    </div>
+    
+  </div>
+  <div class="wrap">
+    <span class="click_down" id="click_down" onclick="_.clickDown()"><span class="top_right_arrow"></span></span>
+  	<header class="header">
+  	  <h1>motivation</h1>
+  	  <div class="funline"></div>
+  	</header>
+  	<div class="output" id="years"></div>
+  	<div class="output" id="death"></div>
+  </div>
+  <script id="years-tpl" type="text/template">
+    <header class="years_header">
+      <span class="years_who">I'm</span>
+    </header>
+    <div class="years_main">
+  	 <span class="years">__YEAR__</span>.<span class="years_extra">__EXTRA__</span><span style="margin-left: 15px;">years old</span>
+  	</div>
+  </script>
+  <script id="death-tpl" type="text/template">
+    <header class="years_header">
+      <span class="years_who">Will die in</span>
+    </header>
+    <div class="years_main">
+     <span class="years">__DAYS__</span><span style="margin-left: 15px;">days</span>
+    </div>
+  </script>
+  <script type="text/javascript" src="js/pikaday.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

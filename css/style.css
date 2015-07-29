@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	background-color: #fff;
+	font: 14px/1.4 'Avenir', 'helvetica neue', helvetica, arial, sans-serif;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrap {
+  position: relative;
+  top: 0;
+  transition: top .3s ease;
+}
+.header {
+  padding: 30px 20px;
+}
+h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+.funline {
+  height: 1px;
+  background-color: #333;
+  width: 70px;
+}
+.click_down {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  border: 1px solid #ddd;
+  border-top: none;
+  width: 45px;
+  height: 50px;
+  line-height: 50px;
+  padding-top: 5px;
+  display: inline-block;
+  opacity: .5;
+  text-align: center;
+  border-radius: 0 0 3px 3px;
+}
+.top_right_arrow {
+  display: inline-block;
+  background-size: cover;
+  background-image: url('../img/double-arrow-down.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+.settings {
+  padding: 20px;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -221px;
+  border-bottom: 1px solid #ccc;
+  transition: top .3s ease;
+  box-shadow: inset 0 0 13px #ccc;
+}
+.toggled .settings {
+  top: 0;
+}
+.toggled .wrap {
+  top: 220px;
+}
+.settings-title {
+  font-size: 15px;;
+}
+.choose_birthday {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  width: 100%;
+  margin-left: 1px;
+}
+.choose_lifetime {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 40px;
+  margin: 0 3px;
+  text-align: center;
+}
+.form-group {
+  margin-top: 20px;
+}
+.btn {
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(24,103,194,0.81);
+  color: #fff;
+  padding: 8px 12px;
+}
+.output {
+  padding: 20px;
+}
+.years {
+  font-size: 50px;
+}
+.years_extra {
+ font-size: 20px;
+}
+.years_main {
+  margin-left: -4px;
+}
+.years_who {
+ font-size: 15px;;
+}
